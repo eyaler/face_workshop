@@ -23,6 +23,9 @@ FP_FRONTALFACE_ALT2 = join(DIR_HAARCASCADES, 'haarcascade_frontalface_alt2.xml')
 FP_FRONTALFACE_ALT_TREE = join(DIR_HAARCASCADES, 'haarcascade_frontalface_alt_tree.xml')
 FP_PROFILEFACE = join(DIR_HAARCASCADES, 'haarcascade_profileface.xml')
 
+FP_DLIB_PREDICTOR = join(DIR_MODELS, 'dlib', 'shape_predictor_68_face_landmarks.dat')
+
+
 # -----------------------------------------------------------------------------
 # Logger
 # -----------------------------------------------------------------------------

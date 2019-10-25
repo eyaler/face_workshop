@@ -9,7 +9,7 @@ import colorlog
 
 class Logger:
   
-  LOGGER_NAME = 'VFRAME'
+  LOGGER_NAME = 'face_workshop'
   LOGFILE_FORMAT = "%(log_color)s%(levelname)-8s%(reset)s %(asctime)s: %(cyan)s%(filename)s:%(lineno)s:%(bold_cyan)s%(funcName)s() %(reset)s%(message)s"
 
   def __init__(self):

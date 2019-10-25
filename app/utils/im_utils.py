@@ -8,7 +8,7 @@ import numpy as np
 
 from app.models.bbox import BBoxDim, BBoxNorm
 
-log = logging.getLogger('VFRAME')
+log = logging.getLogger('face_workshop')
 
 def is_pil(im):
   '''Ensures image is Pillow format

@@ -399,20 +399,17 @@ class BBoxDim(BBoxNorm):
   @classmethod
   def from_xyxy_dim(cls, xyxy, dim):
     x1, y1, x2, y2 = xyxy
-    return BBoxDim(x1, y1, x2, y2, dim)  # **xyxy?
+    return BBoxDim(x1, y1, x2, y2, dim)
+
+  @classmethod
+  def from_xywh_dim(cls, xywh, dim):
+    x, y, w, h = xywh
+    return BBoxDim(x, y, x+w, y+h, dim)
 
   def to_bbox_norm(self):
     w,h = self.dim
     x1,y1,x2,y2 = (self.x1 / w, self.y1 / h, self.x2 / w, self.y2 / h)
     return BBoxNorm(x1, y1, x2, y2)
-  
-  def to_expanded(self, ltrb, redistribute=True):
-    """Expands BBox by number of pixels
-    :param box: (tuple) left, top, right, bottom
-    :returns (BBoxDim) in pixel dimensions
-    """
-    print('Not yet implemented')
-    
 
   def to_labeled(self, label, label_index, fn):
     return BBoxDimLabel(label, label_index, fn)
