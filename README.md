@@ -33,7 +33,7 @@ conda activate face_workshop
 On MacOS:
 
 ```
-conda create -n face_workshop pytho=3.7
+conda create -n face_workshop python=3.7
 conda activate face_workshop
 pip install -r requirements.txt
 conda install nb_conda
