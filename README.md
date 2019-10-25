@@ -32,6 +32,15 @@ conda activate face_workshop
 
 On MacOS:
 
+try `conda env create -f environment.yml` 
+
+then
+
+`conda install -c conda-forge nb_conda_kernels`
+
+
+If this doesn't work. Then try below instructions:
+
 ```
 conda create -n face_workshop python=3.7
 conda activate face_workshop
